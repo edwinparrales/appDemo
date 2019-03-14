@@ -12,6 +12,11 @@
                                 <strong>{{$post->title}}</strong>
                                 @endforeach
                         </div>
+                        <div class="alert alert-info">
+                            @foreach($user->comments as $comment )
+                                <strong>{{$comment->body}}</strong>
+                            @endforeach
+                        </div>
                     @endforeach
                 </ul>
 
